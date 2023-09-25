@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+
+background-color: #2ac92a;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+input{
+    height: 20%;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    text-align: right;
+    font-size: x-large;
+    font-weight: 800;
+}
+.buttons{
+    border-top: 2px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+.buttonsparent{
+    display: flex;
+
+
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 800;
+    cursor: pointer;
+}
+.childbutton,.resultcl,.clearcl{
+    height: 20vh;
+    width: 25vw;
+        display: flex;
+border-radius: 10px;
+transition: .3s ease;
+    align-items: center;
+    justify-content: center;
+}
+.childbutton:hover,.resultcl:hover,.clearcl:hover{
+    box-shadow: 2px 2px 5px 5px wheat;
+}
+@media screen and (max-width:350px){
+    .maincontainer{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+@media screen and (min-width:351px){
+    .maincontainer{
+        width: 80vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width:600px){
+    .maincontainer{
+        width: 20vw;
+        height: 55vh;
+
+        overflow: hidden;
+
+    }
+    input{
+        height: 20vh;
+    }
+    .childbutton,.resultcl,.clearcl{
+        height: 10vh;
+        width: 15vw;
+    }
+}

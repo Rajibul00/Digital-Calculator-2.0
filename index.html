@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\style.css">
+    <title>Digital Calculator 2.0
+    </title>
+</head>
+<body>
+    <div class="maincontainer">
+        <!--input box-->
+        <input type="text">
+        <!--Buttons-->
+        <div class="buttons">
+            <div class="buttonsparent">
+                <div class="childbutton">1</div>
+                <div class="childbutton">2</div>
+                <div class="childbutton">3</div>
+                <div class="childbutton">+</div>
+            </div>
+            <div class="buttonsparent">
+                <div class="childbutton">4</div>
+                <div class="childbutton">5</div>
+                <div class="childbutton">6</div>
+                <div class="childbutton">-</div>
+            </div>
+            <div class="buttonsparent">
+                <div class="childbutton">7</div>
+                <div class="childbutton">8</div>
+                <div class="childbutton">9</div>
+                <div class="childbutton">*</div>
+            </div>
+            <div class="buttonsparent">
+                <div class="clearcl" onclick="clearfnc()">C</div>
+                <div class="childbutton">0</div>
+                <div class="resultcl" onclick="resultfnc()">=</div>
+                <div class="childbutton">/</div>
+            </div>
+        </div>
+    </div>
+    <script src=".\script.js"></script>
+</body>
+</html>
